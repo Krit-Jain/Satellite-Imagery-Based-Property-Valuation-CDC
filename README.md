@@ -38,10 +38,10 @@ data/
 
 notebooks/
 ├── preprocessing.ipynb          # EDA, data cleaning, train/test split, image download
-├── 02_image_exploration.ipynb   # CNN-based image embedding extraction
+├── image_exploration.ipynb   # CNN-based image embedding extraction
 ├── model_training.ipynb         # Tabular + multimodal regression models
-├── 05_neural_multimodal.ipynb   # Neural network-based multimodal fusion
-└── 06_gradcam_explainability.ipynb  # Grad-CAM visual explainability
+├── neural_multimodal.ipynb   # Neural network-based multimodal fusion
+└── gradcam_explainability.ipynb  # Grad-CAM visual explainability
 
 src/
 ├── data_fetcher.py       # Satellite image download pipeline (Mapbox API)
