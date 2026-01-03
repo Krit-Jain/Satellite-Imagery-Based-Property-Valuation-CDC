@@ -30,24 +30,25 @@ This project explores whether **satellite imagery**, processed via deep learning
 ---
 
 ## Project Structure
+```
 data/
-├── raw/ # Original CSV files
-├── images/ # Downloaded satellite images
-└── processed/ # Image embeddings
+├── raw/                 # Original CSV files (train/test)
+├── images/              # Downloaded satellite images
+└── processed/           # Processed image embeddings (.npy)
 
 notebooks/
-├── 01_eda_tabular.ipynb
-├── 02_image_exploration.ipynb
-├── 04_multimodal_regression.ipynb
-├── 05_neural_multimodal.ipynb
-└── 06_gradcam_explainability.ipynb
+├── preprocessing.ipynb          # EDA, data cleaning, train/test split, image download
+├── 02_image_exploration.ipynb   # CNN-based image embedding extraction
+├── model_training.ipynb         # Tabular + multimodal regression models
+├── 05_neural_multimodal.ipynb   # Neural network-based multimodal fusion
+└── 06_gradcam_explainability.ipynb  # Grad-CAM visual explainability
 
 src/
-├── data_fetcher.py # Image download pipeline
-├── dataset.py # Dataset utilities
-├── models.py # ML & neural models
-└── explainability.py # Grad-CAM helpers
-
+├── data_fetcher.py       # Satellite image download pipeline (Mapbox API)
+├── dataset.py            # Dataset loading and preprocessing utilities
+├── models.py             # Machine learning and neural network models
+└── explainability.py     # Grad-CAM helper functions
+```
 ---
 
 ## Methodology
